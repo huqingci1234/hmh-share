@@ -37,6 +37,19 @@
 <a href="https://weibo.com/u/6590329108" target="_blank" class="text-[#153C46]">https://weibo.com/u/6590329108</a>
 </div>
 </div>
+    <div class="card p-4 my-4">
+    <h3>📢 更新公告</h3>
+    <div id="notice-content"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+fetch("./notice.md")
+.then(res=>res.text())
+.then(text=>{
+    document.getElementById("notice-content").innerHTML = marked.parse(text);
+})
+</script>
+
 
 
     <div class="max-w-[700px] margin:30px auto;padding:20px;">
@@ -263,17 +276,6 @@
   </div>
   <p class="text-sm text-slate-500 text-center mt-4">感谢您的支持，本站内容全部免费分享</p>
 </div>
-    <div class="card p-4 my-4">
-    <h3>📢 更新公告</h3>
-    <div id="notice-content"></div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-fetch("./notice.md")
-.then(res=>res.text())
-.then(text=>{
-    document.getElementById("notice-content").innerHTML = marked.parse(text);
-})
-</script>
+
 </body>
             </html>
