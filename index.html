@@ -62,7 +62,7 @@ fetch("./notice.md")
     document.getElementById("notice-content").innerHTML = marked.parse(text);
 })
 </script>
-  <a href="https://www.kdocs.cn/l/cmKuGE9bwSq5" 
+ <a href="https://www.kdocs.cn/l/cmKuGE9bwSq5" 
    target="_blank" 
    rel="noopener noreferrer" 
    class="resource-link">
@@ -71,10 +71,11 @@ fetch("./notice.md")
 
 <style>
 .resource-link {
-  display: inline-block;
-  font-size: 20px;
+  display: block; /* 关键：独占一行，单独一栏，不再靠边挤在一起 */
+  font-size: 24px; /* 和截图里标题字号匹配，截图里标题偏大 */
   font-weight: bold;
   text-decoration: none;
+  margin-bottom:16px; /* 和下方卡片留出间距，和页面排版一致 */
   background: linear-gradient(
     90deg,
     #00eaff,
