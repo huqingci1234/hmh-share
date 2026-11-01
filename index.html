@@ -107,6 +107,83 @@ fetch("./notice.md")
   }
 }
 </style>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更新信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 40px;
+            background-color: #111827;
+            font-family: system-ui, sans-serif;
+        }
+
+        .update-bar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            max-width: 900px;
+            height: 56px;
+            background: linear-gradient(90deg, #eaf6ff, #dceeff);
+            border-radius: 14px;
+            padding: 0 18px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        .blue-bar {
+            width: 4px;
+            height: 28px;
+            background-color: #00eaff;
+            border-radius: 2px;
+            margin-right: 14px;
+            flex-shrink: 0;
+        }
+
+        .resource-link {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            background: linear-gradient(
+                90deg,
+                #00eaff,
+                #8b5cf6,
+                #ff4fd8,
+                #00eaff
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: colorMove 2s linear infinite;
+        }
+
+        @keyframes colorMove {
+            to {
+                background-position: 200% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="update-bar">
+        <span class="blue-bar"></span>
+        <a href="#" class="resource-link">20261101XMbox3.1.9已更新手机端和TV端</a>
+    </div>
+</body>
+</html>
 
 
 
