@@ -18,6 +18,20 @@
         .card-shadow{
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
+        .resource-link {
+  background: linear-gradient(90deg, #00eaff, #a855f7, #ff4fd8);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: colorMove 2s linear infinite;
+}
+@keyframes colorMove {
+  to {
+    background-position: 200% 0;
+  }
+}
+
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800">
@@ -70,64 +84,11 @@ fetch("./notice.md")
     追剧APP最新资源
   </a>
 </div>
+<div class="bg-white rounded-xl p-6 card-shadow mb-8 flex items-center gap-3">
+    <span class="w-1.5 h-8 bg-blue-500 rounded"></span>
+    <a href="#" class="resource-link text-xl font-bold no-underline">20261101XMbox3.1.9已更新手机端和TV端</a>
+</div>
 
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>更新信息</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #ffffff;
-            font-family: system-ui, sans-serif;
-            padding: 16px;
-        }
-        .update-bar {
-            display: flex;
-            align-items: center;
-            background: #f0f7ff;
-            border-radius: 16px;
-            padding: 16px 22px;
-            gap: 14px;
-        }
-        .blue-bar {
-            width: 5px;
-            height: 32px;
-            background-color: #3b82f6;
-            border-radius: 3px;
-            flex-shrink: 0;
-        }
-        .resource-link {
-            font-size: 22px;
-            font-weight: bold;
-            text-decoration: none;
-            background: linear-gradient(90deg, #00eaff, #a855f7, #ff4fd8);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            animation: colorMove 2s linear infinite;
-        }
-        @keyframes colorMove {
-            to {
-                background-position: 200% 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="update-bar">
-        <span class="blue-bar"></span>
-        <a href="#" class="resource-link">20261101XMbox3.1.9已更新手机端和TV端</a>
-    </div>
-</body>
-</html>
 
 
 
