@@ -44,6 +44,24 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+}
+/* ↓ 在这里粘贴下面整套代码 */
+.animate-gradient-cyan {
+  background: linear-gradient(90deg, #60a5fa, #5eead4, #60a5fa);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientCyan 4s ease infinite;
+}
+@keyframes gradientCyan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* ↑ 粘贴结束 */
+
+</style>
 
     </style>
 </head>
@@ -73,12 +91,13 @@
   </a>
 </div>
 <div class="bg-white rounded-xl p-6 card-shadow mb-8 flex items-center gap-3">
-  <span class="w-1.5 h-8 bg-orange-500 rounded"></span>
- <a href="https://huqingci1234.github.io/vpn-mall/" target="_blank" rel="noopener noreferrer" class="animate-gradient-text-new text-xl font-bold no-underline">
-VPN商城（尤湖沿科技提供技术与支持）
-
+  <span class="w-1.5 h-8 bg-blue-500 rounded"></span>
+  <a href="https://huqingci1234.github.io/vpn-mall/" target="_blank" rel="noopener noreferrer" class="animate-gradient-cyan text-xl font-bold no-underline">
+    VPN商城（尤湖沿科技提供技术与支持）
   </a>
 </div>
+
+
 
 
 
