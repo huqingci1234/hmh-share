@@ -154,7 +154,18 @@ https://www.guangyapan.com/s/1952274883156873278_aetzmWH_aYevn37?code=bzi7
     background-size:200% 100%;
     -webkit-background-clip:text; background-clip:text; color:transparent;
     animation:textShine 4.5s linear infinite;
-  }
+  }.gradient-card {
+  background: linear-gradient(90deg,#1e3a5f,#234f5c,#3a2e5c,#1f4a5a);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  border-radius: 24px;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 </style>
 
 
