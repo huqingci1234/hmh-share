@@ -180,33 +180,9 @@ https://www.guangyapan.com/s/1952274883156873278_aetzmWH_aYevn37?code=bzi7
   <a href="https://www.yuque.com/r/note/1ab58fb3-d5d1-491f-a763-5ad4b95f12ee?#" target="_blank" rel="noopener noreferrer" class="resource-link text-xl font-bold no-underline animate-gradient-text">追剧APP最新资源</a>
 </div>
     
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#a58d7b">
-<title>直播＋点播源的壳子，安装即用！</title>
-
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
-  font-family: "Microsoft YaHei", sans-serif;
-  background: #d7c9bb;
-}
-
-/* 柔和暖色动态卡片 */
-.yu-card {
+/* 只在 .yu-card-wrap 内部生效，避免污染全局 */
+.yu-card-wrap {
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -215,7 +191,6 @@ body {
   padding: 38px 25px;
   border-radius: 22px;
   border: 1px solid rgba(255,255,255,.42);
-
   background: linear-gradient(
     125deg,
     #9e8c7b,
@@ -224,20 +199,16 @@ body {
     #8fa9ad,
     #bba38e
   );
-
   background-size: 300% 300%;
   animation: yuBackground 3s ease infinite;
-
   box-shadow: 0 12px 32px rgba(91, 74, 60, .16);
+  margin: 16px auto;
 }
-
 @keyframes yuBackground {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
-/* 柔和浮光 */
 .yu-light {
   position: absolute;
   z-index: -1;
@@ -246,7 +217,6 @@ body {
   pointer-events: none;
   opacity: .48;
 }
-
 .yu-light-one {
   width: 220px;
   height: 220px;
@@ -255,7 +225,6 @@ body {
   left: 5%;
   animation: yuFloatOne 7s ease-in-out infinite alternate;
 }
-
 .yu-light-two {
   width: 230px;
   height: 230px;
@@ -264,7 +233,6 @@ body {
   bottom: -120px;
   animation: yuFloatTwo 8s ease-in-out infinite alternate;
 }
-
 .yu-light-three {
   width: 170px;
   height: 170px;
@@ -274,43 +242,27 @@ body {
   opacity: .35;
   animation: yuFloatThree 6s ease-in-out infinite alternate;
 }
-
 @keyframes yuFloatOne {
   to { transform: translate(65px, 45px) scale(1.15); }
 }
-
 @keyframes yuFloatTwo {
   to { transform: translate(-65px, -45px) scale(1.15); }
 }
-
 @keyframes yuFloatThree {
   to { transform: translate(25px, -30px) scale(1.12); }
 }
-
-/* 内容 */
 .yu-content {
   position: relative;
   z-index: 2;
   text-align: center;
 }
-
-/* 标题流光 */
 .yu-title {
   margin: 0 0 20px;
   font-size: clamp(20px, 4vw, 27px);
   line-height: 1.7;
   font-weight: 700;
   letter-spacing: 1px;
-
-  background: linear-gradient(
-    90deg,
-    #fffaf0,
-    #ffe6c2,
-    #ffffff,
-    #f5d8cb,
-    #fffaf0
-  );
-
+  background: linear-gradient(90deg,#fffaf0,#ffe6c2,#ffffff,#f5d8cb,#fffaf0);
   background-size: 220% auto;
   color: transparent;
   -webkit-background-clip: text;
@@ -318,12 +270,9 @@ body {
   animation: yuTextShine 3s linear infinite;
   filter: drop-shadow(0 1px 3px rgba(75, 55, 40, .25));
 }
-
 @keyframes yuTextShine {
   to { background-position: 220% center; }
 }
-
-/* 链接 */
 .yu-link {
   display: inline-block;
   max-width: 100%;
@@ -337,59 +286,35 @@ body {
   transition: all .3s ease;
   text-shadow: 0 1px 5px rgba(70, 50, 40, .3);
 }
-
 .yu-link:hover {
   color: #fff0cf;
   border-bottom-color: #fff0cf;
   text-shadow: 0 0 10px rgba(255, 245, 220, .65);
 }
-
-/* 手机适配 */
 @media (max-width: 480px) {
-  .yu-card {
+  .yu-card-wrap {
     padding: 30px 15px;
   }
 }
-
-/* 减少动态效果 */
 @media (prefers-reduced-motion: reduce) {
-  .yu-card,
-  .yu-light,
-  .yu-title {
+  .yu-card-wrap, .yu-light, .yu-title {
     animation: none !important;
   }
 }
 </style>
-</head>
 
-<body>
-
-<div class="yu-card">
-
+<div class="yu-card-wrap">
   <div class="yu-light yu-light-one"></div>
   <div class="yu-light yu-light-two"></div>
   <div class="yu-light yu-light-three"></div>
-
   <div class="yu-content">
-
-    <h1 class="yu-title">
-      直播＋点播源的壳子，安装即用！
-    </h1>
-
-    <a
-      class="yu-link"
-      href="https://www.yuque.com/r/note/d8dcfc29-b083-4215-95ae-6149034b5da1"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <h1 class="yu-title">直播＋点播源的壳子，安装即用！</h1>
+    <a class="yu-link" href="https://www.yuque.com/r/note/d8dcfc29-b083-4215-95ae-6149034b5da1" target="_blank" rel="noopener noreferrer">
       https://www.yuque.com/r/note/d8dcfc29-b083-4215-95ae-6149034b5da1
     </a>
-
   </div>
 </div>
 
-</body>
-</html>
 
 
     <div class="bg-white rounded-xl p-6 card-shadow mb-8">
