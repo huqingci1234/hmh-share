@@ -150,7 +150,36 @@
   80%  { opacity: 1; }
   100% { transform: translateX(360%) rotate(15deg);   opacity: 0; }
 }
-    </style>
+   /* ===== QQ群扫光特效 ===== */
+.qq-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.qq-light {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  /* 淡金色扫光 */
+  background: linear-gradient(90deg, transparent, rgba(253, 230, 138, 0.8), transparent);
+  transform: skewX(-25deg);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.qq-light-anim {
+  animation: qqSweep 3s ease-in-out infinite;
+}
+
+@keyframes qqSweep {
+  0%   { left: -100%; opacity: 0; }
+  10%  { opacity: 1; }
+  50%  { left: 120%;  opacity: 1; }
+  100% { left: 120%;  opacity: 0; }
+} </style>
 </head>
 <body class="bg-slate-100 text-slate-800">
     <!-- 头部标题（主包和地址顺序调换） -->
@@ -172,7 +201,8 @@
 </div>
 
 <!-- QQ群流动渐变横幅 -->
-<div class="w-full rounded-2xl p-6 mb-4 flex justify-center items-center overflow-hidden relative shadow-lg shadow-indigo-500/30">
+<div class="qq-card w-full rounded-2xl p-6 mb-4 flex justify-center items-center relative shadow-lg shadow-indigo-500/30">
+  <div class="qq-light qq-light-anim"></div>
   <div class="absolute inset-0 bg-gradient-to-r from-violet-500 via-cyan-400 to-blue-500 animate-flow"></div>
   <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
   <span class="relative text-white font-bold text-2xl tracking-widest drop-shadow-lg">QQ群 571111598</span>
