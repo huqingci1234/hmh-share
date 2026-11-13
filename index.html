@@ -44,8 +44,6 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-}
-/* ↓ 在这里粘贴下面整套代码 */
 .animate-gradient-cyan {
   background: linear-gradient(90deg, #60a5fa, #5eead4, #60a5fa);
   background-size: 300% 300%;
@@ -59,12 +57,6 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-@keyframes gradientCyan {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-/* ========== 这里贴我们新的代码 ========== */
 @keyframes gradientLight {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -80,16 +72,23 @@
   animation: gradientLight 3s ease infinite;
   z-index: -1;
 }
-/* ↑ 粘贴结束 */
-
+/* 补上QQ横幅流动动画 */
+.animate-flow {
+  background-size: 300% 300%;
+  animation: flowBg 3s ease infinite;
+}
+@keyframes flowBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+    </style>
 </head>
 <body class="bg-slate-100 text-slate-800">
     <!-- 头部标题（主包和地址顺序调换） -->
     <header class="bg-white card-shadow py-6">
       <h1 class="text-4xl font-bold text-center my-4">尤湖沿科技</h1>
-
         <p class="text-center text-sm">
-
 </header>
 <div class="text-center my-6">
   <h2 class="text-2xl font-bold text-black">尤湖沿科技</h2>
@@ -114,14 +113,11 @@
   <span class="relative text-white font-bold text-2xl tracking-widest drop-shadow-lg">QQ群 571111598</span>
 </div>
 
-</div>
 <div class="text-center py-8">
   <h1 class="text-3xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
     尤湖沿科技
   </h1>
 </div>
-
-
 
   <div class="bg-white rounded-xl p-6 card-shadow mb-8 flex items-center gap-3">
   <span class="w-1.5 h-8 bg-blue-500 rounded"></span>
@@ -192,8 +188,9 @@ https://www.guangyapan.com/s/1952274883156873278_aetzmWH_aYevn37?code=bzi7
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 </style>
+</body>
+</html>
 
 
 
