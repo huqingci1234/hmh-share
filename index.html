@@ -81,6 +81,74 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}/* 1. QQ群横幅的流动动画（保留原有） */
+@keyframes flowBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 2. 下面是最新卡片的样式，全部复制进去 */
+.yu-card-wrap{
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.yu-content{
+  position: relative;
+  z-index: 2;
+}
+.yu-title{
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+.yu-link{
+  color: #3b82f6;
+  font-size: 16px;
+  word-break: break-all;
+  text-decoration: none;
+}
+.yu-link:hover{ text-decoration: underline; }
+
+.yu-light{
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(115deg, transparent, rgba(96,165,250,.35), transparent);
+  transform: rotate(15deg);
+  filter: blur(6px);
+  pointer-events: none;
+  z-index: 1;
+}
+.yu-light-one{
+  left: -30%;
+  animation: yuSweep 4s ease-in-out infinite;
+}
+.yu-light-two{
+  left: 10%;
+  background: linear-gradient(115deg, transparent, rgba(94,234,212,.30), transparent);
+  animation: yuSweep 4s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+.yu-light-three{
+  left: 50%;
+  background: linear-gradient(115deg, transparent, rgba(168,85,247,.28), transparent);
+  animation: yuSweep 4s ease-in-out infinite;
+  animation-delay: 2.6s;
+}
+@keyframes yuSweep {
+  0%   { transform: translateX(0) rotate(15deg);      opacity: 0; }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { transform: translateX(360%) rotate(15deg);   opacity: 0; }
 }
     </style>
 </head>
