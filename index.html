@@ -180,6 +180,22 @@
   50%  { left: 120%;  opacity: 1; }
   100% { left: 120%;  opacity: 0; }
 } </style>
+        <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+            pointer-events: none;
+            background-image: url("bj.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body class="bg-slate-100 text-slate-800">
     <!-- 头部标题（主包和地址顺序调换） -->
