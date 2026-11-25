@@ -1071,83 +1071,208 @@ https://pan.xunlei.com/s/VP7Agr2MJjR-m3buibeFRFOGA1?pwd=agid#
 </div>
 
 
-<!-- 尤湖沿科技联系信息页脚：独立追加，不改动原有资源 -->
+<!-- 尤湖沿科技联系信息页脚：极光亮色版 -->
 <style>
 #yhy-footer-2026 {
-  position:relative; isolation:isolate; overflow:hidden;
-  margin:28px auto 18px; padding:2px; border-radius:22px;
-  max-width:760px;
-  background:linear-gradient(120deg,#00e5ff,#7161ff,#ff42b3,#ff9b42,#00e5ff);
-  background-size:350% 350%;
-  animation:yhyFooterGradient 12s ease infinite;
-  box-shadow:0 16px 48px rgba(79,70,229,.24);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  max-width: 760px;
+  margin: 28px auto 18px;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(120deg, #00d4ff, #7b5cff, #ff4ecd, #ff9f43, #00d4ff, #4d8bff);
+  background-size: 400% 400%;
+  animation: yhyFooterGradient 4s ease infinite;
+  box-shadow:
+    0 20px 60px rgba(123, 92, 255, .26),
+    0 0 80px rgba(0, 212, 255, .18);
 }
+
 #yhy-footer-2026::before {
-  content:""; position:absolute; inset:-45%;
+  content: "";
+  position: absolute;
+  inset: -50%;
   background:
-    radial-gradient(circle at 20% 30%,rgba(0,238,255,.48),transparent 34%),
-    radial-gradient(circle at 78% 68%,rgba(255,57,181,.42),transparent 36%),
-    radial-gradient(circle at 55% 12%,rgba(153,92,255,.42),transparent 32%);
-  filter:blur(28px); animation:yhyFooterGlow 10s ease-in-out infinite alternate;
-  z-index:-1; pointer-events:none;
+    radial-gradient(circle at 15% 25%, rgba(0, 229, 255, .45), transparent 32%),
+    radial-gradient(circle at 80% 70%, rgba(255, 78, 205, .42), transparent 34%),
+    radial-gradient(circle at 50% 10%, rgba(153, 92, 255, .38), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(255, 159, 67, .32), transparent 28%),
+    radial-gradient(circle at 10% 80%, rgba(77, 139, 255, .36), transparent 30%);
+  filter: blur(32px);
+  animation: yhyFooterAurora 8s ease-in-out infinite alternate;
+  z-index: -1;
+  pointer-events: none;
 }
+
 #yhy-footer-2026 .yhy-footer-inner {
-  position:relative; overflow:hidden; border-radius:20px; padding:30px 24px 24px;
-  color:#f8fbff; text-align:center;
-  background:linear-gradient(145deg,rgba(9,18,48,.91),rgba(25,20,66,.88),rgba(40,16,65,.88));
-  -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 30px 24px 24px;
+  color: #fff;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.20), transparent 45%),
+    linear-gradient(145deg, rgba(90,120,255,.50), rgba(140,80,255,.46), rgba(220,80,180,.44));
+  -webkit-backdrop-filter: blur(22px) saturate(1.4);
+  backdrop-filter: blur(22px) saturate(1.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.30),
+    inset 0 -30px 70px rgba(123, 92, 255, .16);
 }
+
+#yhy-footer-2026 .yhy-footer-inner::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 50%;
+  height: 220%;
+  transform: rotate(35deg);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.24), transparent);
+  animation: yhyFooterSweep1 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
 #yhy-footer-2026 .yhy-footer-inner::after {
-  content:""; position:absolute; top:-80%; left:-45%; width:45%; height:260%;
-  transform:rotate(24deg);
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);
-  animation:yhyFooterSweep 8s ease-in-out infinite; pointer-events:none;
+  content: "";
+  position: absolute;
+  top: -60%;
+  right: -60%;
+  width: 40%;
+  height: 220%;
+  transform: rotate(-30deg);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);
+  animation: yhyFooterSweep2 3.8s ease-in-out infinite;
+  pointer-events: none;
 }
+
 #yhy-footer-2026 h2 {
-  position:relative; z-index:1; margin:0 0 22px; font-size:25px; font-weight:800;
-  letter-spacing:2px; color:#fff;
-  text-shadow:0 0 16px rgba(90,220,255,.45),0 0 28px rgba(220,90,255,.28);
+  position: relative;
+  z-index: 1;
+  margin: 0 0 22px;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  background: linear-gradient(100deg, #ffffff, #c8f4ff, #ffd6f5, #ffffff, #d4c4ff);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: yhyFooterGradient 4s ease infinite;
+  filter: drop-shadow(0 2px 8px rgba(255,255,255,.4));
 }
+
 #yhy-footer-2026 .yhy-footer-rule {
-  height:1px; margin:18px auto; max-width:520px;
-  background:linear-gradient(90deg,transparent,rgba(123,225,255,.8),rgba(255,111,210,.8),transparent);
+  height: 1px;
+  margin: 18px auto;
+  max-width: 520px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.85), rgba(255,255,255,.85), transparent);
+  box-shadow: 0 0 10px rgba(255,255,255,.45);
 }
+
 #yhy-footer-2026 .yhy-footer-label {
-  margin:0 0 10px; color:#9feaff; font-size:13px; letter-spacing:2px; font-weight:700;
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255,255,255,.55);
 }
+
 #yhy-footer-2026 .yhy-footer-contact {
-  display:grid; gap:10px; justify-items:center; font-size:15px; line-height:1.7;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  font-size: 15px;
+  line-height: 1.7;
 }
+
 #yhy-footer-2026 .yhy-footer-contact a {
-  color:#fff; text-decoration:none; overflow-wrap:anywhere;
+  color: #fff;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: all .25s;
 }
-#yhy-footer-2026 .yhy-footer-contact a:hover { color:#8ff3ff; }
-#yhy-footer-2026 .yhy-footer-member { color:#fff; }
-#yhy-footer-2026 .yhy-footer-hint { display:block; color:#ffc8e9; font-size:12px; margin-top:2px; }
+#yhy-footer-2026 .yhy-footer-contact a:hover {
+  color: #fff;
+  text-shadow: 0 0 14px rgba(255,255,255,.75);
+  transform: scale(1.03);
+}
+
+#yhy-footer-2026 .yhy-footer-member { color: #fff; }
+#yhy-footer-2026 .yhy-footer-hint {
+  display: block;
+  color: #ffe4f7;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
 #yhy-footer-2026 .yhy-footer-runtime {
-  color:#fff; font-size:clamp(17px,3.5vw,23px); font-weight:800;
-  font-variant-numeric:tabular-nums; letter-spacing:.5px;
-  text-shadow:0 0 14px rgba(45,220,255,.65);
+  color: #fff;
+  font-size: clamp(17px, 3.5vw, 24px);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .5px;
+  text-shadow: 0 0 12px rgba(255,255,255,.65), 0 0 24px rgba(255,255,255,.3);
 }
-#yhy-footer-2026 .yhy-footer-copy { color:#e6eaff; font-size:13px; line-height:1.9; }
-#yhy-footer-2026 .yhy-footer-global { color:#b9c8ff; font-size:12px; letter-spacing:.5px; }
+
+#yhy-footer-2026 .yhy-footer-copy {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.9;
+  text-shadow: 0 1px 4px rgba(0,0,0,.12);
+}
+#yhy-footer-2026 .yhy-footer-global {
+  color: rgba(255,255,255,.82);
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+
 @keyframes yhyFooterGradient {
-  0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%}
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-@keyframes yhyFooterGlow {
-  from{transform:translate3d(-2%,0,0) scale(.96)} to{transform:translate3d(3%,2%,0) scale(1.08)}
+
+@keyframes yhyFooterAurora {
+  0%   { transform: translate3d(-3%, -2%, 0) scale(.95) rotate(0deg); }
+  33%  { transform: translate3d(2%, 3%, 0) scale(1.05) rotate(2deg); }
+  66%  { transform: translate3d(-2%, 1%, 0) scale(1.02) rotate(-1deg); }
+  100% { transform: translate3d(3%, -3%, 0) scale(.98) rotate(1deg); }
 }
-@keyframes yhyFooterSweep {
-  0%,12%{left:-55%;opacity:0} 25%{opacity:1} 58%,100%{left:125%;opacity:0}
+
+@keyframes yhyFooterSweep1 {
+  0%   { left: -60%; opacity: 0; }
+  15%  { opacity: 1; }
+  50%  { left: 120%; opacity: 0; }
+  100% { left: 120%; opacity: 0; }
 }
-@media(max-width:520px) {
-  #yhy-footer-2026 .yhy-footer-inner{padding:25px 16px 20px}
-  #yhy-footer-2026 h2{font-size:22px}
+
+@keyframes yhyFooterSweep2 {
+  0%   { right: -60%; opacity: 0; }
+  20%  { opacity: 1; }
+  60%  { right: 120%; opacity: 0; }
+  100% { right: 120%; opacity: 0; }
 }
-@media(prefers-reduced-motion:reduce) {
-  #yhy-footer-2026,#yhy-footer-2026::before,#yhy-footer-2026 .yhy-footer-inner::after{animation:none}
+
+@media (max-width: 520px) {
+  #yhy-footer-2026 .yhy-footer-inner { padding: 25px 16px 20px; }
+  #yhy-footer-2026 h2 { font-size: 22px; letter-spacing: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #yhy-footer-2026,
+  #yhy-footer-2026::before,
+  #yhy-footer-2026 .yhy-footer-inner::before,
+  #yhy-footer-2026 .yhy-footer-inner::after,
+  #yhy-footer-2026 h2 { animation: none; }
 }
 </style>
+
 <footer id="yhy-footer-2026" aria-label="尤湖沿科技联系信息">
   <div class="yhy-footer-inner">
     <h2>尤湖沿科技</h2>
@@ -1172,6 +1297,7 @@ https://pan.xunlei.com/s/VP7Agr2MJjR-m3buibeFRFOGA1?pwd=agid#
     <div class="yhy-footer-global">侵权删除 · 合规反馈 · 内容投稿</div>
   </div>
 </footer>
+
 <script>
 (function () {
   var output = document.getElementById("yhy-footer-runtime");
@@ -1191,6 +1317,7 @@ https://pan.xunlei.com/s/VP7Agr2MJjR-m3buibeFRFOGA1?pwd=agid#
   window.setInterval(updateRuntime, 1000);
 })();
 </script>
+
 
 </div><!-- /lower-content-area -->
 
